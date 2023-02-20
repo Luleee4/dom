@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>CSGO</title>
+</head>
+<body>
+    <nav>
+        <div class="items container">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="shop.html" class="nav-item">Shop</a>
+                <a href="#" class="nav-item">Contact</a>
+                <a href="register.html" class="nav-item">Register</a>
+                
+            </div>
+        </div>
+        
+    </nav>
+    <div class="main">
+        <div class="login container">
+            <div class="content">
+                <div id="registered-user"></div>
+                <p class="title-login">Login</p>
+                <div class="username">
+                    <p>Username:</p>
+                    <input id="userTxt" type="text">
+
+                </div>
+                <div class="login-box">
+                    <p>Password:</p>
+                    <input id="passwordTxt" type="password">
+
+                </div>
+                <div onclick="checkLogin()" class="login-btn">
+                    Login
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('registered-user').innerHTML = `${urlParams.get('ime')} - ${urlParams.get('username')} - ${urlParams.get('email')}`
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

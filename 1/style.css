@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body, html {
+    height:100%;
+}
+.container {
+    width:80%;
+    min-width: 1440px;
+    margin:0 auto;
+}
+nav {
+    background-color: #181818;
+}
+.items {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+}
+nav a {
+    text-decoration: none;
+    color:#fff;
+    margin: 0 10px; 
+}
+nav img {
+    width:70px;
+    height:auto;
+    display: block;
+}
+.main {
+    height:93%;
+    background-image: url('home-bg.jpg');
+    
+}
+.title-text {
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#fff;
+    
+}
+.title {
+    font-size: 4rem;
+}
+.subtitle {
+    font-size: 2rem;
+}
+.shop-btn {
+    color:#fff;
+    text-decoration: none;
+    background-color: #150414;
+    display:inline;
+    margin-top: 1rem;
+    text-align: center;
+    width:200px;
+    border-radius: 8px;
+    padding:10px 30px;
+    transition: 250ms ease-in-out;
+}
+.shop-btn:hover {
+    background-color: #660660;
+}
+.hero {
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 4rem;
+    background-image: url('shop-bg.png');
+    color:#fff;
+    padding:10rem 0;
+}
+.shop {
+    padding: 5rem 0;
+    background-color: #150414;
+}
+.shop-main {
+    display:flex;
+    gap:35px;
+}
+.search {
+    color:#fff;
+    margin:30px 0;
+}
+.search input {
+    margin-left: 2rem;
+}
+.skin-card {
+    color:#fff;
+    background-color: #660660;
+    border: 2px #240422 ;
+    padding-bottom: 30px;
+    border-radius: 9px;
+}
+.skin-card p {
+    margin-left: 30px;
+}
+.login {
+    padding-top:4rem;
+    display:flex;
+    justify-content: center;
+    color:#fff;
+}
+.login input {
+    margin:1rem 0;
+}
+
+.content {
+    border-radius: 20px;
+    padding:6rem 4rem;
+    background-color:#660660 ;
+}
+.login-btn {
+    border-radius: 9px;
+    text-align: center;
+    cursor:pointer;
+    background-color: #240422;
+    padding:10px;
+}
+.title-login {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 40px;
+}
