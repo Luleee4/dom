@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        tr:nth-child(odd) {
+          background-color: #660660;
+        }
+        </style>
+</head>
+
+<body>
+    <nav>
+        <div class="items container">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="shop.html" class="nav-item">Shop</a>
+                <a href="#" class="nav-item">Contact</a>
+                <a href="register.html" class="nav-item">Register</a>
+                
+            </div>
+        </div>
+    </nav>
+    <div class="shop-hero hero">
+        <div class="container">
+            <p>Shop</p>
+        </div>
+    </div>
+    <div class="shop">
+        <div class="container">
+            <div class="search">
+                Search: <input type="text">
+              
+                    Skuplje: <input type="radio" name="a" id="">
+                    Jeftinije: <input type="radio" name="a" id="">
+                Tip:
+                <select name="soritranje">
+                    <option value="USP">USP</option>
+                    <option value="AWP">AWP</option>
+                    <option value="AK-47">AK-47</option>
+                    <option value="Desert Eagle">Desert Eagle</option>
+                  </select>
+            </div>
+            <div class="shop-main">
+                <div class="skin-card">
+                    <img id="slika" src="usp.png" alt="" srcset="">
+                    <p id="ime-skina" class="skin-name">USP Printstream</p>
+                    <p id="cena-skina" class="price">100$</p>
+                </div>
+                <div class="skin-card">
+                    <img id="slika" src="usp.png" alt="" srcset="">
+                    <p id="ime-skina" class="skin-name">USP Printstream</p>
+                    <p id="cena-skina" class="price">100$</p>
+                </div>
+                <div class="skin-card">
+                    <img id="slika" src="usp.png" alt="" srcset="">
+                    <p id="ime-skina" class="skin-name">USP Printstream</p>
+                    <p id="cena-skina" class="price">100$</p>
+                </div>
+            </div>
+            <h2 style="text-align: center; color:#ffff; margin-top: 3rem;">Transaction history</h2>
+            <table style="margin-top: 3rem;">
+ 
+                <tr>
+                  <th>Skin</th>
+                  <th>Price</th>
+                  <th>Date</th>
+                </tr>
+                <tr>
+                  
+                  <td>asda</td> 
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                    
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+                </tr>
+              </table> 
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
